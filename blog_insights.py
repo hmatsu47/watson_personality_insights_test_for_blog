@@ -14,9 +14,7 @@ domain = "http://qiita.com/"
 # 探索対象URLパス
 scrape_path = "http://qiita.com/hmatsu47/items/"
 # 探索対象外URL文字列
-exclude_str_list = ["feed", "rss", "archive", "about", "revision", "like", "follow", "contribution",
-
-"comment", "reference", ".md"]
+exclude_str_list = ["feed", "rss", "archive", "about", "revision", "like", "follow", "contribution", "comment", "reference", ".md"]
 # 探索済みURL
 scrape_url_list = []
 # 抽出した本文
