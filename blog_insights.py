@@ -48,7 +48,9 @@ def crawl(url):
     print(url)
     scrape_url_list.append(url)
     # ページHTMLを取得
-    html = urllib.request.urlopen(url).read()
+#    html = urllib.request.urlopen(url).read()
+    with urllib.request.urlopen(url) as response:
+           html = response.read()
     # 1秒スリープする※大事なのであえてコメント！※
     sleep(1)
     # 本文抽出対象なら抽出処理を行う
